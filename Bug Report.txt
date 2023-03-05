@@ -1,2 +1,12 @@
-ID:
-Summary:
+ID: 0001;
+Summary: user login error;
+Priority: ASAP;
+Severity : critical;
+Environment: Wwindows 10 Pro, Google Chrome;
+Steps to reproduce:
+Step 1: click on the login button;
+Step 2: fill in the user's email and password field with valid data;
+Step 3: click the continue button;
+Expected_result: user logins via button login;
+Actual_result: button login is not clickable;
+Attachment: error.wmv
