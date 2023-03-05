@@ -1,0 +1,5 @@
+Tittle: user's redirection to the authorization form;
+Steps: click the login button;
+Expected result: log in form is opened;
+Actual result: log in form isn't opened;
+Comment: bug report 22;
