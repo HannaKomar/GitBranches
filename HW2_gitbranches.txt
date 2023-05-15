@@ -1,4 +1,4 @@
-1. На локальном репозитории сделать ветки для:
+я╗┐1. ╨Э╨░ ╨╗╨╛╨║╨░╨╗╤М╨╜╨╛╨╝ ╤А╨╡╨┐╨╛╨╖╨╕╤В╨╛╤А╨╕╨╕ ╤Б╨┤╨╡╨╗╨░╤В╤М ╨▓╨╡╤В╨║╨╕ ╨┤╨╗╤П:
 - Postman
 git branch Postman
 - Jmeter
@@ -14,7 +14,7 @@ git branch Charles
 - MobileTesting
 git branch MobileTesting
 
-2. Запушить все ветки на внешний репозиторий
+2. ╨Ч╨░╨┐╤Г╤И╨╕╤В╤М ╨▓╤Б╨╡ ╨▓╨╡╤В╨║╨╕ ╨╜╨░ ╨▓╨╜╨╡╤И╨╜╨╕╨╣ ╤А╨╡╨┐╨╛╨╖╨╕╤В╨╛╤А╨╕╨╣
 git checkout Postman
 git push -u origin Postman 
 git checkout Jmeter
@@ -28,7 +28,7 @@ git push -u origin SQL
 git checkout Charles
 git push -u origin Charles
 
-3. В ветке BugReports сделать текстовый документ со структурой баг репорта
+3. ╨Т ╨▓╨╡╤В╨║╨╡ BugReports ╤Б╨┤╨╡╨╗╨░╤В╤М ╤В╨╡╨║╤Б╤В╨╛╨▓╤Л╨╣ ╨┤╨╛╨║╤Г╨╝╨╡╨╜╤В ╤Б╨╛ ╤Б╤В╤А╤Г╨║╤В╤Г╤А╨╛╨╣ ╨▒╨░╨│ ╤А╨╡╨┐╨╛╤А╤В╨░
 git checkout BugReports
 cat > Bug Report.txt
 ID: 0001;
@@ -44,19 +44,19 @@ Expected_result: user logins via button login;
 Actual_result: button login is not clickable;
 Attachment: error.wmv
 
-4. Запушить структуру багрепорта на внешний репозиторий
+4. ╨Ч╨░╨┐╤Г╤И╨╕╤В╤М ╤Б╤В╤А╤Г╨║╤В╤Г╤А╤Г ╨▒╨░╨│╤А╨╡╨┐╨╛╤А╤В╨░ ╨╜╨░ ╨▓╨╜╨╡╤И╨╜╨╕╨╣ ╤А╨╡╨┐╨╛╨╖╨╕╤В╨╛╤А╨╕╨╣
 git add Bug Report.txt
 git commit -m "Added Bug Report.txt"
 git push
 
-5. Вмержить ветку BugReports в Main
+5. ╨Т╨╝╨╡╤А╨╢╨╕╤В╤М ╨▓╨╡╤В╨║╤Г BugReports ╨▓ Main
 git checkout main
 git merge BugReports 
 
-6. Запушить main на внешний репозиторий
+6. ╨Ч╨░╨┐╤Г╤И╨╕╤В╤М main ╨╜╨░ ╨▓╨╜╨╡╤И╨╜╨╕╨╣ ╤А╨╡╨┐╨╛╨╖╨╕╤В╨╛╤А╨╕╨╣
 git push
 
-7. В ветке CheckLists набросать структуру чек листа
+7. ╨Т ╨▓╨╡╤В╨║╨╡ CheckLists ╨╜╨░╨▒╤А╨╛╤Б╨░╤В╤М ╤Б╤В╤А╤Г╨║╤В╤Г╤А╤Г ╤З╨╡╨║ ╨╗╨╕╤Б╤В╨░
 git checkout CheckLists
 cat > CheckList.txt
 Tittle: user's redirection to the authorization form;
@@ -67,10 +67,10 @@ Comment: bug report 22;
 
 git commit -m "Added CheckList.txt"
 
-8. Запушить структуру на внешний репозиторий
+8. ╨Ч╨░╨┐╤Г╤И╨╕╤В╤М ╤Б╤В╤А╤Г╨║╤В╤Г╤А╤Г ╨╜╨░ ╨▓╨╜╨╡╤И╨╜╨╕╨╣ ╤А╨╡╨┐╨╛╨╖╨╕╤В╨╛╤А╨╕╨╣
 git push
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-на Github pull request
+9. ╨Э╨░ ╨▓╨╜╨╡╤И╨╜╨╡╨╝ ╤А╨╡╨┐╨╛╨╖╨╕╤В╨╛╤А╨╕╨╕ ╤Б╨┤╨╡╨╗╨░╤В╤М Pull Request ╨▓╨╡╤В╨║╨╕ CheckLists ╨▓ main
+╨╜╨░ Github pull request
 
-10. Синхронизировать Внешнюю и Локальную ветки Main
+10. ╨б╨╕╨╜╤Е╤А╨╛╨╜╨╕╨╖╨╕╤А╨╛╨▓╨░╤В╤М ╨Т╨╜╨╡╤И╨╜╤О╤О ╨╕ ╨Ы╨╛╨║╨░╨╗╤М╨╜╤Г╤О ╨▓╨╡╤В╨║╨╕ Main
 git pull
