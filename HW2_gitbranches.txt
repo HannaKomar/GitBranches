@@ -28,8 +28,6 @@ git push -u origin SQL
 git checkout Charles
 git push -u origin Charles
 
-Jmeter CheckLists BugReports SQL Charles Mobile testing
-
 3. В ветке BugReports сделать текстовый документ со структурой баг репорта
 git checkout BugReports
 cat > Bug Report.txt
