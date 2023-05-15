@@ -1,0 +1,78 @@
+1. На локальном репозитории сделать ветки для:
+- Postman
+git branch Postman
+- Jmeter
+git branch Jmeter
+- CheckLists
+git branch CheckLists
+- BugReports
+git branch BugReports
+- SQL
+git branch SQL
+- Charles
+git branch Charles
+- MobileTesting
+git branch MobileTesting
+
+2. Запушить все ветки на внешний репозиторий
+git checkout Postman
+git push -u origin Postman 
+git checkout Jmeter
+git push -u origin Jmeter
+git checkout CheckLists
+git push -u origin CheckLists
+git checkout BugReports
+git push -u origin BugReports
+git checkout SQL
+git push -u origin SQL
+git checkout Charles
+git push -u origin Charles
+
+Jmeter CheckLists BugReports SQL Charles Mobile testing
+
+3. В ветке BugReports сделать текстовый документ со структурой баг репорта
+git checkout BugReports
+cat > Bug Report.txt
+ID: 0001;
+Summary: user login error;
+Priority: ASAP;
+Severity : critical;
+Environment: Wwindows 10 Pro, Google Chrome;
+Steps to reproduce:
+Step 1: click on the login button;
+Step 2: fill in the user's email and password field with valid data;
+Step 3: click the continue button;
+Expected_result: user logins via button login;
+Actual_result: button login is not clickable;
+Attachment: error.wmv
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git add Bug Report.txt
+git commit -m "Added Bug Report.txt"
+git push
+
+5. Вмержить ветку BugReports в Main
+git checkout main
+git merge BugReports 
+
+6. Запушить main на внешний репозиторий
+git push
+
+7. В ветке CheckLists набросать структуру чек листа
+git checkout CheckLists
+cat > CheckList.txt
+Tittle: user's redirection to the authorization form;
+Steps: click the login button;
+Expected result: log in form is opened;
+Actual result: log in form isn't opened;
+Comment: bug report 22;
+
+git commit -m "Added CheckList.txt"
+
+8. Запушить структуру на внешний репозиторий
+git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+на Github pull request
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git pull
